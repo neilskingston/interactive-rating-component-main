@@ -83,12 +83,14 @@ body {
   background-color: black;
 }
 
-.rating-card {
+.card {
   width: 375px;
   height: 375px;
   background-image: linear-gradient(var(--clr-dark-blue), var(--clr-very-dark-blue));
   border-radius: 30px;
 }
+
+
 
 .circle-container {
   width: 37px;
@@ -108,28 +110,36 @@ body {
 
 h1 {
   color: white;
-  font-weight: 700;
-  font-size: 25px;
+  font-weight: 400;
+  font-size: 23px;
   margin: 25px 0px 10px 25px;
 }
 
 .rating-blurb {
   color: var(--clr-light-gray);
   margin: 0px 50px 0px 25px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .number {
   color: var(--clr-light-gray);
+  padding-top: 4px;
 }
 
 .numb-circle {
-  width: 50px;
-  height: 50px;
+  width: 47px;
+  height: 47px;
   border-radius: 50%;
   display: grid;
   place-content: center;
   background-color: var(--clr-dark-gray);
+}
+
+.numb-circle:hover,
+.numb-circle:focus-within {
+  cursor: pointer;
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
 }
 
 .rating-grid-container {
@@ -161,4 +171,49 @@ h1 {
 
 .attribution {
   color: var(--clr-white);
+}
+
+/*---THANK YOU CARD---*/
+
+
+.thankyou-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+img {
+  width: 162px;
+  height: 108px;
+  margin-top: 40px;
+}
+
+.selected-container {
+  background-color: var(--clr-dark-gray);
+  display: grid;
+  place-content: center;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+h2 {
+  color: var(--clr-orange);
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 20px 3px 20px;
+}
+
+h3 {
+  color: var(--clr-white);
+  margin: 30px 0px 7px 0px;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.thanks {
+  color: var(--clr-meduim-gray);
+  font-size: 14px;
+  margin: 0px 30px;
+  text-align: center;
 }

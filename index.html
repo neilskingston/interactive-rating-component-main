@@ -34,11 +34,11 @@
   </head>
   <body>
     <!-- Rating state start -->
-    <div class="rating-card">
+    <div class="rating-card | card" id="ratings-card">
       <div class="circle-container">
         <div class="star-logo"></div>
       </div>
-      <h1>How did we do?</h1>
+      <h1 id="test">How did we do?</h1>
 
       <p class="rating-blurb">
         Please let us know how we did with your support request. All feedback is
@@ -46,25 +46,26 @@
       </p>
 
       <div class="rating-grid-container">
-        <div class="one | numb-circle | number">1</div>
-        <div class="two | numb-circle | number">2</div>
-        <div class="three | numb-circle | number">3</div>
-        <div class="four | numb-circle | number">4</div>
-        <div class="five | numb-circle | number">5</div>
+        <div class="one | numb-circle | number" id="one">1</div>
+        <div class="two | numb-circle | number" id="two">2</div>
+        <div class="three | numb-circle | number" id="three">3</div>
+        <div class="four | numb-circle | number" id="four">4</div>
+        <div class="five | numb-circle | number" id="five">5</div>
       </div>
 
-      <button class="button">Submit</button>
+      <button class="button" id="button">Submit</button>
     </div>
 
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <!-- <div class="thankyou-card">
-      <h2 class="selected-rating">
-        You selected
-        <div class="rating-imported"></div>
-        out of 5
-      </h2>
+    <div class="thankyou-card | card" id="thankyou-card">
+      <img src="/images/illustration-thank-you.svg" alt="" />
+      <div class="selected-container">
+        <h2 class="selected-rating">
+          You selected <span id="imported-rating"></span> out of 5
+        </h2>
+      </div>
 
       <h3>Thank you!</h3>
 
@@ -72,9 +73,9 @@
         We appreciate you taking the time to give a rating. If you ever need
         more support, don’t hesitate to get in touch!
       </p>
-    </div> -->
+    </div>
 
-    <!-- Thank you state end -->
+    <!-- Thank you state end-->
 
     <div class="attribution">
       Challenge by
@@ -82,5 +83,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Neil Kingston</a>.
     </div>
+    <script src="/script.js"></script>
   </body>
 </html>
